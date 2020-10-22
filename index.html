@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>полезные команды git</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="commands__git">
+        <h1 class="git__title">полезные команды git</h1>
+        <div class="git__container">
+            <h3 class="git__subtitle">для командной строки(bash)</h3>
+            <div class="git__description">
+                <table frame="border" border="1" cellspacing="0" cellpadding="5">
+                    <tr>
+                        <th>команда</th>
+                        <th>описание</th>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <td><b>cd + "название папки"</b></td>
+                        <td>перейти в папку</td>
+                    </tr>
+                    <tr>
+                        <td><b>ls + "название папки или путь"</b></td>
+                        <td>просмотр содержимого папки</td>
+                    </tr>
+                    <tr>
+                        <td><b>mkdir + "название папки"</b></td>
+                        <td>создать папку</td>
+                    </tr>
+                    <tr>
+                        <td><b>touch + "название файла" + .расширение</b></td>
+                        <td>создать файл данного типа</td>
+                    </tr>
+                    <tr>
+                        <td><b>cat "имя файла и .расширение"</b></td>
+                        <td>прочитать указанный файл</td>
+                    </tr>
+                    <tr>
+                        <td><b>mv "имя файла и .расширение" + "имя папки или путь"</b></td>
+                        <td>перенести файл</td>
+                    </tr>
+
+
+                </table>
+            </div>
+
+        </div>
+        <div class="git__container">
+            <h3 class="git__subtitle">Основные команды</h3>
+            <div class="git__description">
+                <table frame="border" border="1" cellspacing="0" cellpadding="5">
+                    <tr>
+                        <th>команда</th>
+                        <th>описание</th>
+                    </tr>
+                    <tr>
+                        <td><b>git init</b></td>
+                        <td>инициализировать деректорию</td>
+                    </tr>
+                    <tr>
+                        <td><b>git add + название файла</b></td>
+                        <td>за индексировать(зафиксировать) изменения</td>
+                    </tr>
+                    <tr>
+                        <td><b>git type + "данные" (с моим алиасом -t)</b></td>
+                        <td>название типа данных </td>
+                    </tr>
+                    <tr>
+                        <td><b>git damp + "хэш" (с моим алиасом -p)</b></td>
+                        <td>перейти по хэшу</td>
+                    </tr>
+                    <tr>
+                        <td><b>git cat-file + "способ перехода" + "данные"</b></td>
+                        <td>перейти по указаному пути или открыть файл</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>git commit -m "текст комментария"</b></td>
+                        <td>создать коммит индексированных файлов</td>
+                    </tr>
+                    <tr>
+                        <td><b>git status</b></td>
+                        <td>текущие состояние данной деректории</td>
+                    </tr>
+                    <tr>
+                        <td><b>git tag "название версии например v1"</b></td>
+                        <td>сохроняет текущию версию файла и присваивает ей имя</td>
+                    </tr>
+                    <tr>
+                        <td><b>git mv "имя и .расширение файла" + "папка или путь до папки куда необходимо перенести файл"</b></td>
+                        <td>перетаскивает файл в другую папку</td>
+                    </tr>
+
+                </table>
+            </div>
+
+        </div>
+        <div class="git__container">
+            <h3 class="git__subtitle">Отображение комиттов (<a href="https://githowto.com/ru/history"
+                    target="blank">подробнее</a>)</h3>
+            <div class="git__description">
+                <table frame="border" border="1" cellspacing="0" cellpadding="5">
+                    <tr>
+                        <th>команда</th>
+                        <th>описание</th>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <td><b>git log</b></td>
+                        <td>стандартное отображение</td>
+                    </tr>
+                    <tr>
+                        <td><b>git log --pretty=oneline</b></td>
+                        <td>отобразить в 1 линию</td>
+                    </tr>
+                    <tr>
+                        <td><b>git log --pretty=oneline --max-count=2</b></td>
+                        <td>отобразить последние 2 коммита</td>
+                    </tr>
+                    <tr>
+                        <td><b>git log --pretty=oneline --since='5 minutes ago'</b></td>
+                        <td>отобразить коммиты за последние 5 минут</td>
+                    </tr>
+                    <tr>
+                        <td><b>git log --pretty=oneline --until='5 minutes ago'</b></td>
+                        <td>отобразить все коммиты кроме созданных за последние 5 минут</td>
+                    </tr>
+                    <tr>
+                        <td><b>git log --pretty=oneline --author="имя автора"</b></td>
+                        <td>отобразить все коммиты указанного автора</td>
+                    </tr>
+                    <tr>
+                        <td><b>git log --pretty=oneline --all</b></td>
+                        <td>отобразить все коммиты</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <div class="git__container">
+            <h3 class="git__subtitle">Отмена изменений</h3>
+            <div class="git__description">
+                <table frame="border" border="1" cellspacing="0" cellpadding="5">
+                    <tr>
+                        <th>команда</th>
+                        <th>описание</th>
+                    </tr>
+                
+                    <tr>
+                        <td><b>git checkout "указать к чему вернуться" Например<br>
+                                1. git checkout "имя файла(ов)"<br>
+                                2. git checkout "хэш файла(ов)"<br>
+                                3. git checkout "тэг файла(ов)"
+                            </b></td>
+                        <td>вернуться к указаному сохраненому состоянию<br>
+                            1. возвращает файл к последнему коммиту<br>
+                            2. возвращает файл к выбранному коммиту в соответствие с указанным хэшем<br>
+                            3. возвращает к указанной версии
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>git reset HEAD "название файла"</b></td>
+                        <td>сбрасывает добавленные но еще не закомиченные изменения</td>
+                    </tr>
+                    <tr>
+                        <td><b>git reset --hard "хэш или тэг"</b></td>
+                        <td>удаляет указанный коммит из ветки и из ее истории
+                            для полной очистки необходимо еще удалить тег сборшиком муссора
+                            git tag -d "указанный тег"
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><b>git revert HEAD или хэш коммита</b></td>
+                        <td>удаляет изменения указанного коммита</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <div class="git__container">
+            <h3 class="git__subtitle">работа с ответвлениями</h3>
+            <div class="git__description">
+                <table frame="border" border="1" cellspacing="0" cellpadding="5">
+                    <tr>
+                        <th>команда</th>
+                        <th>описание</th>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <td><b>^</b></td>
+                        <td>родитель</td>
+                    </tr>
+                    <tr>
+                        <td><b>git branch + "имя ветки" (с моим алиасом -b)</b></td>
+                        <td>создать отвевление</td>
+                    </tr>
+                    <tr>
+                        <td><b>git branch ( -a )</b></td>
+                        <td>получить информацию о ответвлениях в случае с клонированными репозиториями надо добавить -a</td>
+                    </tr>
+                    <tr>
+                        <td><b>git checkout + "имя ветки"</b></td>
+                        <td>переход к указаное ветке</td>
+                    </tr>
+                    <tr>
+                        <td><b>git merge "название ветки с какой происходит слияние"</b></td>
+                        <td>слияние веток</td>
+                    </tr>
+                    <tr>
+                        <td><b>git rebase "название ветки с какой происходит преобразование"</b></td>
+                        <td>преобразование веток(в отличие от слияния добавляет коммиты)</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <div class="git__container">
+            <h3 class="git__subtitle">Клонирование репозиториев</h3>
+            <div class="git__description">
+                <table frame="border" border="1" cellspacing="0" cellpadding="5">
+                    <tr>
+                        <th>команда</th>
+                        <th>описание</th>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <td><b>git clone "название или адрес репозитория"</b></td>
+                        <td>клонирование репозитория</td>
+                    </tr>
+                    <tr>
+                        <td><b>git remote</b></td>
+                        <td>Получить имя репозитория</td>
+                    </tr>
+                    <tr>
+                        <td><b>git remote show "имя репозитория"</b></td>
+                        <td>получить информацию о репозитории с указаным именем</td>
+                    </tr>
+                    <tr>
+                        <td><b>git fetch</b></td>
+                        <td>получить изменения из главного репозитория (данная команда не сливает их)
+                            для обьединения необходимо слияние git merge "название ветки для слияния например origin/master"
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td><b>git pull</b></td>
+                        <td>получить изменения из главного репозитория и сразу выполнить слияние</td>
+                    </tr>
+                    <tr>
+                        <td><b>git remote add shared "путь к репозиторию.git" </b></td>
+                        <td>создание удалленого репозитория</td>
+                        
+                    </tr>
+                    <tr>
+                        <td><b>git push shared "название ветки" </b></td>
+                        <td>отправить изменения в удалленный репозиторий</td>
+                    </tr>
+                    <tr>
+                        <td><b> git remote add shared "путь к репозиторию.git" <br>
+                            git branch --track shared master <br>
+                            git pull shared master </b></td>
+                        <td>получить изменения из удалленого репозитория</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <div class="git__container">
+            <h3 class="git__subtitle">Условные обозначения</h3>
+            <div class="git__description">
+                <table frame="border" border="1" cellspacing="0" cellpadding="5">
+                    <tr>
+                        <th>команда</th>
+                        <th>описание</th>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <td><b>^</b></td>
+                        <td>родитель</td>
+                    </tr>
+                    <tr>
+                        <td><b>HEAD</b></td>
+                        <td>Последний коммит в данной ветке</td>
+                    </tr>
+                    <tr>
+                        <td><b>master</b></td>
+                        <td>главная ветка в проекте</td>
+                    </tr>
+
+                </table>
+            </div>
+
+        </div>
+        <div class="git__links">
+            <h3 class="links__title">Полезные ссылки</h3>
+            <ul class="links__description">
+                <li><a href="https://githowto.com/ru/undoing_local_changes" target="blank">Отмена изменений в локальном каталоге(до записи коммита)</a></li>
+                <li><a href="https://githowto.com/ru/undoing_committed_changes" target="blank">Отмена коммитов в локальном каталоге</a></li>
+                <li><a href="https://githowto.com/ru/removing_commits_from_a_branch" target="blank">удаление коммита из истории ветки</a></li>
+                <li><a href="https://githowto.com/ru/git_internals_git_directory" target="blank">перемешение по каталогу .git</a></li>
+                <li><a href="https://githowto.com/ru/git_internals_working_directly_with_git_objects" target="blank">работа с обьектами например перемещение по файлам по git хэшу</a></li>
+                <li><a href="https://githowto.com/ru/resolving_conflicts" target="blank">разрешение конфликтов при слияние веток</a></li>
+                <li><a href="https://githowto.com/ru/adding_a_tracking_branch" target="blank">Добавление локальной ветки какая может отслеживать изменения удаленной</a></li>
+                <li><a href="https://githowto.com/ru/bare_repositories" target="blank">создание чистого репозитория</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
